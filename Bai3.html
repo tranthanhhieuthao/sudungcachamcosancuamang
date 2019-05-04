@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let chuoi=prompt("Xin moi nhap chuoi");
+    let result=[];
+    let ChuHoa="QWERTYUIOPASDFGHJKLZXCVBNM";
+    let ChuThuong="qwertyuiopasdfghjklzxcvbnm";
+    for (let i=0;i<chuoi.length;i++){
+        if (ChuHoa.indexOf(chuoi[i]) !==-1) {
+            result.push(chuoi[i].toLowerCase());
+        }
+        else if (ChuThuong.indexOf(chuoi[i]) !==-1){
+            result.push(chuoi[i].toUpperCase());
+        }
+        else {
+            result.push(chuoi[i]);
+        }
+    }
+    document.write(result.join(""));
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<script>
+    let nhapso=prompt("Nhap so");
+    let stringso=nhapso.toString();
+    let result=[];
+    for (let i=0;i<stringso.length;i++){
+        if (stringso[i-1] % 2==0 && stringso[i] %2==0){
+            result.push("-",stringso[i]);
+        }
+        else {
+            result.push(stringso[i]);
+        }
+    }
+    document.write(result.join(""));
+</script>
+</body>
+</html>
